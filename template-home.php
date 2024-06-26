@@ -1,9 +1,16 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Home Page
+*/
+get_header(); ?>
 <main>
+    <section>
+        <div class="container"></div>
+    </section>
     <?php
     if (have_posts()) :
         while (have_posts()) : the_post();
-            the_title('<h2>', '</h2>');
+            the_title('<h1>', '</h1>');
             the_content();
         endwhile;
     else :
