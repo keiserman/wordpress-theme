@@ -10,15 +10,18 @@ get_header(); ?>
             <p class="text-xl">Lorem ipsum</p>
         </div>
     </section>
-    <?php
-    if (have_posts()) :
-        while (have_posts()) : the_post();
-            the_title('<h1>', '</h1>');
-            the_content();
-        endwhile;
-    else :
-        echo '<p>No content found</p>';
-    endif;
-    ?>
+    <section>
+        <div class="container">
+            <?php
+            if (have_posts()) :
+                while (have_posts()) : the_post();
+                    the_content();
+                endwhile;
+            else :
+                echo '<p>No content found</p>';
+            endif;
+            ?>
+        </div>
+    </section>
 </main>
 <?php get_footer(); ?>

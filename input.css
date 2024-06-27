@@ -1,0 +1,39 @@
+/*
+Theme Name: EVPM
+Theme URI: http://example.com/my-custom-theme
+Author: Your Name
+Author URI: http://example.com
+Description: A custom theme for WordPress.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: my-custom-theme
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply m-auto max-w-screen-xl px-4;
+}
+
+.menu {
+  @apply flex items-center gap-4;
+}
+
+.menu-item {
+  @apply text-sm uppercase transition-all text-neutral-300;
+}
+
+.menu-item:hover {
+  @apply text-white;
+}
+
+.button {
+  @apply px-5 py-3 bg-white text-gray-900 rounded-full transition-all;
+}
+
+.button:hover {
+  @apply bg-gray-200;
+}

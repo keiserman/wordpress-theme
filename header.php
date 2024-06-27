@@ -10,11 +10,12 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="p-4 bg-neutral-800 text-white">
+    <header class="py-8 bg-gray-900 text-white">
         <div class="container flex items-center justify-between">
-            <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+            <a class="text-2xl" href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
             <nav>
                 <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
             </nav>
+            <a href="#" class="button">Sign up</a>
         </div>
     </header>
